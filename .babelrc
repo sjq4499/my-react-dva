@@ -1,0 +1,21 @@
+{
+   "presets": ["react-app"],
+   "plugins": [
+      //装饰器配置
+      [
+         "@babel/plugin-proposal-decorators",
+         {
+            "legacy": true
+         }
+      ],
+      //antd 按需加载  需下载 babel-plugin-import
+      [
+         "import",
+         {
+            "libraryName": "antd",
+            "libraryDirectory": "es",
+            "style": "css" // `style: true` 会加载 less 文件
+         }
+      ]
+   ]
+}
